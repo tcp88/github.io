@@ -72,11 +72,15 @@ main {
     margin-bottom: 20px;
 }
 
-.about .responsive {
-    display: block;
-    width: 100%;
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container .responsive {
+    width: 45%;
     height: auto;
-    margin: 0 auto 20px;
 }
 
 .services .service-items {
