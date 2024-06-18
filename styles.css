@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #0077be;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.about, .services, .contact {
+    padding: 40px 0;
+}
+
+.about h1, .services h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0077be;
+}
+
+.about p, .services .service-item p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about .responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+.services .service-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.services .service-item {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact .contact-form {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact .contact-form button {
+    background-color: #0077be;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact .contact-form button:hover {
+    background-color: #005f99;
+}
+
+footer {
+    background-color: #0077be;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}

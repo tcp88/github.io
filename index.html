@@ -4,94 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tidal Innovations</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff;
-            color: #333;
-        }
-        header {
-            background-color: #0077be;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header img {
-            width: 100px;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            margin: 20px 0;
-        }
-        .contact-form {
-            background-color: #e0f7fa;
-            padding: 20px;
-            border-radius: 5px;
-            display: inline-block;
-            text-align: left;
-        }
-        .contact-form label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            background-color: #0077be;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #005f99;
-        }
-        footer {
-            background-color: #0077be;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="images/TidalInnovationsLogo1.png" alt="Tidal Innovations Logo">
-        <h1>Tidal Innovations</h1>
+        <div class="container">
+            <img src="images/TidalInnovationsLogo1.png" alt="Tidal Innovations Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>About Us</h2>
-            <p>Welcome to Tidal Innovations. We are a tech company focused on providing innovative solutions with a nautical theme. Our services include state-of-the-art technology solutions tailored to enhance your business efficiency and growth.</p>
-            <img src="images/TidalInnovationsImage1.webp" alt="Our Service" width="300">
-            <img src="images/TidalInnovationsImage2.webp" alt="Our Team" width="300">
+        <section id="about" class="about">
+            <div class="container">
+                <h1>About Tidal Innovations</h1>
+                <p>Welcome to Tidal Innovations. We are a tech company focused on providing innovative solutions with a nautical theme. Our services include state-of-the-art technology solutions tailored to enhance your business efficiency and growth.</p>
+                <img src="images/TidalInnovationsImage1.webp" alt="Our Service" class="responsive">
+                <img src="images/TidalInnovationsImage2.webp" alt="Our Team" class="responsive">
+            </div>
         </section>
-        <section>
-            <h2>Contact Us</h2>
-            <form class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-items">
+                    <div class="service-item">
+                        <h3>Service 1</h3>
+                        <p>Innovative technology solutions to meet your business needs.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Service 2</h3>
+                        <p>Advanced analytics and data management for optimal performance.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Service 3</h3>
+                        <p>Comprehensive IT support and consulting services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Tidal Innovations. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Tidal Innovations. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
