@@ -76,10 +76,12 @@ main {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .image-container .responsive {
     width: 45%;
+    max-width: 300px;
     height: auto;
 }
 
